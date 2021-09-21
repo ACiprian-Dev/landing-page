@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 18px;
+}
+
+html, body {
+    color: hsl(213, 9%, 39%);
+    font-family: 'Barlow';
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 20px 40px 0;
+    width: 100%;
+    align-items: center;
+}
+
+.navigation {
+    width: 30%;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+#button {
+    background: #fff;
+    color: hsl(212, 27%, 19%);
+    padding: 15px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+main {
+    background: url(./images/desktop/image-header.jpg);
+    height: 85vh;
+    background-size: contain;
+    background-position: center;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: -150px;
+}
+
+main img {
+    padding-bottom: 150px;
+}
+
+.showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.showcase img {
+    width: 100%;
+    height: 100%;
+}
+
+.showcase .item-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 180px 100px;
+}
+
+.showcase .item-text{
+    font-size: 2rem;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces';
+}
+
+.showcase .item-text p {
+    font-size: 1rem;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow';
+}
+
+.showcase .item-text a {
+    font-size: 1.5rem;
+    color: hsl(212, 27%, 19%);
+    width: fit-content;
+    font-weight: 900;
+}
+
+.showcase .item-text h2 {
+    font-weight: 900;
+}
+
+.showcase .item-text a::after {
+    content: '';
+    height: 8px;
+    border-radius: 4px;
+    display: block;
+    background: #FBF1C1;
+    background: linear-gradient(to left, #FBF1C1 50%, hsl(51, 100%, 49%) 50%) right;
+    background-size: 200%;
+    width: 104%;
+    bottom: 11px;
+    position: relative;
+    z-index: -1;
+    transition: ease-out .5s;
+}
+
+.showcase .item-text a span {
+    padding-left: 5px;
+}
+
+.showcase .item-text a:hover::after {
+    background-position: left;
+}
